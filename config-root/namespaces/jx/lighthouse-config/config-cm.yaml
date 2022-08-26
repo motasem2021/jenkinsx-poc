@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - motasem2021/jenkinsx-poc
-      target_url: http://lighthouse.jx./merge/status
+      target_url: http://lighthouse.jx.172.21.0.3.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
