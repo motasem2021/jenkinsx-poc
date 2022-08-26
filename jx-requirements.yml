@@ -22,7 +22,7 @@ spec:
     repository: jenkinsx-poc
   - key: staging
   ingress:
-    domain: ""
+    domain: 172.21.0.3.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
