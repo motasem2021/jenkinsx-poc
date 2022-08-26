@@ -34,6 +34,8 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: motasem2021
+    repository: jenkinsx-poc
   - key: staging
   ingress:
     domain: change.me
@@ -44,6 +46,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: motasem2021
   repository: bucketrepo
   secretStorage: vault
   vault: {}
