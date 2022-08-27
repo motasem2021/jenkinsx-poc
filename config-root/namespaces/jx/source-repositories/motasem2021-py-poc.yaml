@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: motasem2021
+    provider: github
+    repository: py-poc
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: motasem2021-py-poc
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/motasem2021/py-poc.git
+  org: motasem2021
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: py-poc
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/motasem2021/py-poc

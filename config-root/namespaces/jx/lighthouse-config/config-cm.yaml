@@ -8,6 +8,8 @@ data:
     in_repo_config:
       enabled:
         motasem2021/jenkinsx-poc: true
+        motasem2021/node-poc: true
+        motasem2021/py-poc: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +22,8 @@ data:
         skip-unknown-contexts: false
       merge_method:
         motasem2021/jenkinsx-poc: merge
+        motasem2021/node-poc: merge
+        motasem2021/py-poc: merge
       queries:
       - labels:
         - approved
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - motasem2021/jenkinsx-poc
+        - motasem2021/node-poc
+        - motasem2021/py-poc
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +47,8 @@ data:
         - needs-rebase
         repos:
         - motasem2021/jenkinsx-poc
+        - motasem2021/node-poc
+        - motasem2021/py-poc
       target_url: http://lighthouse.jx.172.21.0.3.nip.io/merge/status
 kind: ConfigMap
 metadata:
